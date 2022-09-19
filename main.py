@@ -4,8 +4,9 @@ import shutil
 import sys
 from Cryptodome.PublicKey import RSA
 import pyperclip
+import os
 
-ssh_path = '/Users/robinmeyssonnier/.ssh'
+ssh_path = os.path.join(os.path.expanduser('~'), '.ssh')
 
 
 class bcolors:
